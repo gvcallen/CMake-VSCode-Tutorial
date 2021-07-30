@@ -1,0 +1,10 @@
+﻿---
+BasedOnStyle: Microsoft
+PointerAlignment: Left
+AccessModifierOffset: -4
+AlwaysBreakTemplateDeclarations: Yes
+AllowShortFunctionsOnASingleLine: Inline
+AlignAfterOpenBracket: Align
+AllowShortCaseLabelsOnASingleLine: 'true'
+BreakConstructorInitializers: 'BeforeComma'
+...
