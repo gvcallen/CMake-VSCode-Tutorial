@@ -16,7 +16,11 @@ A couple steps need to be followed in order to get C++, CMake and VS Code workin
 
 - Install CMake itself from https://cmake.org/, and ensure that its "bin" directory is added to your "Path" environment variable (see https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14 on how to do so). This may be done directly in the CMake installer.
 
-- Install the "CMake Tools", "CMake" and "CPP-Tools" extensions from the VS Code marketplace. An optional (but highly recommended) extension is also the "Project Templates" extension, available at https://marketplace.visualstudio.com/items?itemName=cantonios.project-templates. This will allow you to easily create new projects from this template, which actually uses placeholder variables for things such as the project name. A clean install for all of these extensions is also recommended.
+- Install the "CMake Tools", "CMake" and "CPP-Tools" extensions from the VS Code marketplace. An optional (but highly recommended) extension is also the "Project Templates" extension. This will allow you to easily create new projects from this template, which actually uses placeholder variables for things such as the project name. A clean install for all of these extensions is also recommended.
+    - https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools
+    - https://marketplace.visualstudio.com/items?itemName=twxs.cmake
+    - https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
+    - https://marketplace.visualstudio.com/items?itemName=cantonios.project-templates
 
 - Install the compiler of your choice:
     - MSVC: The easiest way to install the MSVC compiler toolchain is to install the latest version of Visual Studio Community Edition. Ticking the "Desktop development with C++" workload in the installer should download everything required. Make sure to install this in the default location, otherwise you should manually add the relevant directories to the Path environment variable.
