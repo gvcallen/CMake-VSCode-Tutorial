@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // MSVC Debugging:
+        {
+            "program": "${command:cmake.launchTargetPath}",
+            "name": "Launch (msvc)",
+            "request": "launch",
+            "args": [],
+            "environment": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "openOnSessionStart",
+            "type":"cppvsdbg",
+        },
+        
+        // GDB Debugging:
+        {
+            "program": "${command:cmake.launchTargetPath}",
+            "name": "Launch (gdb)",
+            "request": "launch",
+            "args": [],
+            "environment": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "openOnSessionStart",
+            "type": "cppdbg",
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

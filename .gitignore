@@ -1,5 +1,5 @@
 # Editors
-.vscode
+# .vscode this should be uncommented for real applications
 .tags
 *.sublime-workspace
 *.tmlanguage.cache
