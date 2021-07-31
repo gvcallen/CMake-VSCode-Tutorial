@@ -18,7 +18,7 @@ set(LOCAL_PROJECT_DESCRIPTION "Description")
 
 # Header files (relative to "include" directory)
 set(HEADERS
-
+    header.h
 )
 
 # Source files (relative to "src" directory)
