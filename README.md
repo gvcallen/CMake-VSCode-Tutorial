@@ -50,11 +50,11 @@ CMake: Debug ========================== not used
     
 CMake: Run Without Debugging ============== not used
     
-Debug: Start Debugging ================== F5
+Debug: Start Debugging =================== F5
     
-Debug: Stop ============================= Shift + F5
+Debug: Stop =========================== Shift + F5
     
-Project: Create Project from Template === Ctrl + Alt + N
+Project: Create Project from Template ======== Ctrl + Alt + N
 
 
 ## 5. Project structure and CMake Basics
