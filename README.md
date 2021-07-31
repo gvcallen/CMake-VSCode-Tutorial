@@ -65,7 +65,7 @@ Project: Create Project from Template =========== Ctrl + Alt + N
 
 - The relevant build files are produced in a seperate "build tree" which can be considered "parallel" to the source tree. This may be different from IDE setups. The template produces sub-directories's for each kit inside the "build" directory. A further two subdirectories for "debug" and "release" are also generated, and then the general CMake build tree follows from there. This includes a folder for each sub-project, and a "bin" directory in each sub-project with the relevant executable. I am not sure if this layout is standard CMake practice or not, but it prevents rebuilding each time you switch configurations, and is what I consider the "Visual Studio" standard.
 
-- Although this setup only contains one project, it is fairly easy to create multiple sub-projects and the equivalent of "Solutions" in Visual Studio. This will simply mean adding sub-folders to CMake using add_subdirectory(). These sub-folders will generally have their own CMakeLists.txt file and source files, and the hierarchy can extend as long as you'd like. Again, I'd recommend watching vector-of-bool's videos further before continuing with something like this.
+- Although this setup only contains one project, it is fairly easy to create multiple sub-projects and the equivalent of a "Solution" with multiple projects in Visual Studio. This will simply mean adding sub-folders to CMake using add_subdirectory(). These sub-folders will generally have their own CMakeLists.txt file and source files, and the hierarchy can extend as long as you'd like. Again, I'd recommend watching vector-of-bool's videos further before continuing with something like this.
 
 
 ## 6. Doxygen and ClangFormat
