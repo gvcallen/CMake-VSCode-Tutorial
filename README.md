@@ -38,7 +38,7 @@ A couple steps need to be followed in order to get C++, CMake and VS Code workin
 
 - We are using CMake Tools to run the necessary CMake commands that generates our MSVC Solution/MinGW makefile, and VS Code to debug our target. Although CMake Tools does offer debugging functionality, it seems the VS Code debugging works perfectly, is slightly more robust and offers more functionality (e.g. debugging using the integrated terminal). I have therefore removed the CMake Tools shortcuts for both debug and run (i.e. "CMake: Debug" and "CMake: Run Without Debugging"). Some shortcuts I have are:
 
-CMake: Build All Projects                         Ctrl + Shift + B
+CMake: Build All Projects &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl + Shift + B
 
 CMake: Build                                      Ctrl + B
 
