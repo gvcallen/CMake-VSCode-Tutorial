@@ -1,8 +1,5 @@
 {
     "cmake.buildDirectory": "${workspaceFolder}/build/${buildKit}/${buildType}",
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-    "cmake.configureSettings": {
-        "CMAKE_AR": "ar.exe"
-    },
     "doxygen_runner.configuration_file_override": "${workspaceFolder}/docs/doxygen/Doxyfile"
 }
