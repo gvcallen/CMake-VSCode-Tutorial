@@ -9,7 +9,7 @@ The following is a CMake C++ Template for use with VS Code. It has been designed
 
 The template requires very little CMake knowledge (as I have little myself!) which makes it great for mimicking an IDE environment such as Visual Studio (which I will use as a "baseline" when setting up the template and configuring settings). In fact, this template is specifically designed for those who are moving from a fully-fledged IDE such as Visual Studio, to VS Code (although this obviously isn't a necessity). It may also help those transitioning from more integrated programming languages such as Python.
 
-A couple steps need to be followed in order to get C++, CMake and VS Code working smoothly, however I guarantee you that if you follow the instructions below step-by-step, starting from scratch, you'll end up with an awesome build environment to program in C++ in the great editor that is VS Code. The template of course is also configurable and highly modular (see section 7. Further Enhancements). Nonetheless, I hope that this tutorial can be of help to you, and lets get started!
+A couple steps need to be followed in order to get C++, CMake and VS Code working smoothly, however I guarantee you that if you follow the instructions below step-by-step, starting from scratch, you'll end up with an awesome build environment to program in C++ in the great editor that is VS Code. The template of course is also configurable and highly modular (see section 7. Further Enhancements). Nevertheless, I hope that this tutorial can be of help to you, and lets get started!
 
 
 ## 2. Prerequisites
