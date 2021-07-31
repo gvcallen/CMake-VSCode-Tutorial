@@ -57,7 +57,18 @@ Debug: Stop =========================== Shift + F5
 Project: Create Project from Template =========== Ctrl + Alt + N
 
 
-## 5. Project structure and CMake Basics
+## 5. Project Creation Workflow
+
+After mentioning the above, the following is the typical workflow to create a new project with the template extension:
+- Create a new folder and name it MyProjectName
+- Open the folder in VS Code
+- Call the command "Project: Create Project from Template" and enter MyProjectName
+- Run the "CMake: Configure" command, selecting the kit you would like to initially use
+- Add code to src/main.cpp
+- Run with Debug: Start Debugging and have fun!
+
+
+## 6. Project structure and CMake Basics
 
 - With CMake, each project is essentially managed by a CMakeLists.txt file. This file has been set up to be as beginner-friendly and configurable as possible. It contains two lists of files called "SOURCES" and "HEADERS". In this file, you need to manually add the source files and header files each time they are added to your project, as indicated. Although this may seem like a step backwards from IDEs that do this automatically, it is generally how CMake projects are managed, as they are IDE agnostic. The file has also been setup so that you can add definitions, include paths and compiler options, although I recommend vector-of-bool's videos on "How to CMake Good" on YouTube for anything more complicated.
 
@@ -68,20 +79,29 @@ Project: Create Project from Template =========== Ctrl + Alt + N
 - Although this setup only contains one project, it is fairly easy to create multiple sub-projects and the equivalent of a "Solution" with multiple projects in Visual Studio. This will simply mean adding sub-folders to CMake using add_subdirectory(). These sub-folders will generally have their own CMakeLists.txt file and source files, and the hierarchy can extend as long as you'd like. Again, I'd recommend watching vector-of-bool's videos further before continuing with something like this.
 
 
-## 6. Doxygen and ClangFormat
+## 7. Things to keep in mind
+
+It should be noted that, once a project has been created, most of the configurations related to CMake can be made through the toolbar at the bottom of VS Code. This includes whether CMake is building in Debug or Release mode, the current kit being used, the target being built etc.
+
+It should also be noted that, each time a change has been made to a CMakeLists.txt file, CMake should be re-configured. This should be done automatically through the extension when you save the file.
+
+Lastly, the launch.json file contains two different launch configurations: one for MSVC and one for GDB. Be sure the launch configuration you have selected in VS Code matches the kit selection in CMake.
+
+
+## 8. Doxygen and ClangFormat
 
 This project has been setup to allow for easy creation of documentation files using Doxygen. Although this is a separate tutorial on its own, all one should know is that the "docs" folder contains a file indicating how this documentation should be generated using software Doxygen, which seems to be the industry standard for C++ documentation. This file is referenced in the VS Code settings.json file. This allows for integration with the Doxygen VS Code extension.
 
 A .clang-format file is also provided. This contains my own personal formatting settings for use with an indentation and code formatter called ClangFormat. This formatter is bundled with the VS Code CPP extension and I highly recommend using it. To use ClangFormat instead of the default formatter, simply change "C_Cpp: Formatting" under preferences in VS Code to clangFormat. Also ensure formatting is enabled for a specific action, such as when you save a file.
 
 
-## 7. Future Enhancements
+## 9. Future Enhancements
 
 There are plenty enhancements that can be made to this template. The first thing I would like is the ability for source files to be automatically added to the relevent CMakeLists.txt file when they are added to the project. I'm sure this could be accomplish with a simple VS Code extension. I consider this feature to be standard for IDEs and hope to potentially write an extension for it in the future.
 
 I am sure there are other additions that could be made too, but I believe this template has been refined multiple times and so I hope it has a solid foundation for others to use and build upon. I'm happy for any criticism and suggestions. My email is gvcallen@gmail.com.
 
-## 8. Conclusion
+## 10. Conclusion
 
 That's it! I hoped you find this useful in some way. As mentioned, if you have any additions, suggestions, or bug-fixes, feel free to message/email me or submit a pull request.
 
