@@ -46,9 +46,9 @@ CMake: Cancel Build ===================== Ctrl + Backspace
 
 CMake: Compile Active File ============== Ctrl + F7
 
-CMake: Debug ============================ <not used>
+CMake: Debug ============================ not used
     
-CMake: Run Without Debugging ============ <not used>
+CMake: Run Without Debugging ============ not used
     
 Debug: Start Debugging ================== F5
     
